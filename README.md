@@ -1,0 +1,1 @@
+sebagai dokumentasi kode saja
