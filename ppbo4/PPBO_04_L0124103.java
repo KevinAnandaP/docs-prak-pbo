@@ -30,13 +30,17 @@ public class PPBO_04_L0124103 {
                 String inputJumlah = sc.nextLine();
                 int qty = Integer.parseInt(inputJumlah);
                 
-                assert qty >= 1 : "Minimal beli 1";
+                if(qty < 1) {
+                    throw new IllegalArgumentException("Minimal beli 1");
+                }
                 
                 warung.prosesBeli(item, qty);
                 System.out.println();
                 
             } catch(NumberFormatException nfe) {
                 System.out.println("Harus pakai angka\n");
+            } catch(IllegalArgumentException iae) {
+                System.out.println("Maaf: " + iae.getMessage() + "\n");
             } catch(StokHabisException she) {
                 System.out.println("Maaf: " + she.getMessage() + "\n");
             } catch(BarangTidakAdaException bga) {
