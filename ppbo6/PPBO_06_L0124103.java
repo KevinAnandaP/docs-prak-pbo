@@ -10,25 +10,22 @@ public class PPBO_06_L0124103 {
         
         System.out.println("=== SISTEM INVENTORI PERPUSTAKAAN ===\n");
         
-        // TAHAP 1: Array
         Buku[] dataBuku = new Buku[3];
-        dataBuku[0] = new Buku("Harry Potter", 15, 85000);
-        dataBuku[1] = new Buku("The Hobbit", 10, 95000);
-        dataBuku[2] = new Buku("1984", 8, 70000);
+        dataBuku[0] = new Buku("Apip and friends", 15, 85000);
+        dataBuku[1] = new Buku("The Missing Balls", 10, 95000);
+        dataBuku[2] = new Buku("Darkhold", 8, 70000);
         
         System.out.println("--- DATA BUKU (ARRAY) ---");
         tampilkanBuku(dataBuku);
         
-        // TAHAP 2: ArrayList
         ArrayList<Buku> koleksiBuku = new ArrayList<>();
-        koleksiBuku.add(new Buku("To Kill a Mockingbird", 12, 80000));
-        koleksiBuku.add(new Buku("The Great Gatsby", 7, 75000));
-        koleksiBuku.add(new Buku("Moby Dick", 5, 90000));
+        koleksiBuku.add(new Buku("Kimi no Nawa", 12, 80000));
+        koleksiBuku.add(new Buku("The Flash", 7, 75000));
+        koleksiBuku.add(new Buku("Bumi", 5, 90000));
         
         System.out.println("\n--- DATA BUKU (ARRAYLIST) ---");
         tampilkanKoleksi(koleksiBuku);
         
-        // Menu
         boolean lanjut = true;
         while(lanjut) {
             System.out.println("\n=== MENU ===");
